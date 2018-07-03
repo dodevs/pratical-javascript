@@ -9,7 +9,7 @@
 
 ### Version 2
 
-- [] it should have a function to display todos
-- [] it should have a function to add todos
-- [] it should have a function to change todos
-- [] it should have a function to delete todos
+- [x] it should have a function to display todos
+- [x] it should have a function to add todos
+- [x] it should have a function to change todos
+- [ ] it should have a function to delete todos
