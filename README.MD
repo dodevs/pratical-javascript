@@ -5,4 +5,11 @@
 - [x] it should have a way to display todos
 - [x] it should have a way to add new todos
 - [x] it should hava a way to change a todo
-- [ ] it should have a way to delete a todo
+- [x] it should have a way to delete a todo
+
+### Version 2
+
+- [] it should have a function to display todos
+- [] it should have a function to add todos
+- [] it should have a function to change todos
+- [] it should have a function to delete todos
