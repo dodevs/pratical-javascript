@@ -34,3 +34,8 @@
 - [x] .displayTodo should show .todoText
 - [x] .displayTodo should tell you if .todos is empty
 - [x] .displayTodo should show .completed
+
+### Version 6
+
+- [x] .toggleAll: if everything's true, make everything false.
+- [x] .toggleAll: otherwise, make everything true.
