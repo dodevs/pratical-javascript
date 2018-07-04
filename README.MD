@@ -43,5 +43,13 @@
 ### Comparisons
 
 ```javascript
-{} === {} //Retorna falso porque são dois objetos instanciados em endereços de memoria diferentes.
+{} === {} //Retorna falso porque são dois objetos que fazem referencia a endereços de memoria diferentes.
+var object1 = {}
+var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 ```
+
+### Version 7
+
+- [x] There should be a "Display todos" button and a "Toggle all" button in the app
+- [ ] Clicking "Display todos" should run todoList.displayTodos
+- [ ] Clicking "Toggle all" should run todoList.toggleAll()
