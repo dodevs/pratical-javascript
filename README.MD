@@ -28,3 +28,9 @@
 - [x] todoList.addTodo should add objects
 - [x] todoList.changeTodo should change the todoText preperty
 - [x] todosList.toggleCompleted should change the completed property
+
+### Version 5
+
+- [x] .displayTodo should show .todoText
+- [x] .displayTodo should tell you if .todos is empty
+- [x] .displayTodo should show .completed
