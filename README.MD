@@ -22,3 +22,9 @@
 - [x] it should have a addTodo method
 - [x] it should have a changeTodo method
 - [x] it should have a deleteTodo method
+
+### Version 4
+
+- [x] todoList.addTodo should add objects
+- [x] todoList.changeTodo should change the todoText preperty
+- [x] todosList.toggleCompleted should change the completed property
