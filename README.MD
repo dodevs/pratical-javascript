@@ -39,3 +39,9 @@
 
 - [x] .toggleAll: if everything's true, make everything false.
 - [x] .toggleAll: otherwise, make everything true.
+
+### Comparisons
+
+```javascript
+{} === {} //Retorna falso porque são dois objetos instanciados em endereços de memoria diferentes.
+```
