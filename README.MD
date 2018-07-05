@@ -53,3 +53,10 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 - [x] There should be a "Display todos" button and a "Toggle all" button in the app
 - [x] Clicking "Display todos" should run todoList.displayTodos
 - [x] Clicking "Toggle all" should run todoList.toggleAll()
+
+### Version 8
+
+- [x] it should have working controls for .addTodo
+- [x] it should have working controls for .changeTodo
+- [x] it should have working controls for .deleteTodo
+- [x] it should have working controls for .toggleCompleted
