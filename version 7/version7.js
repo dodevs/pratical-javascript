@@ -60,3 +60,15 @@ var todoList = {
         //this.displayTodos();
     }
 };
+
+//Requeriment 2
+var displayTodosButton = document.getElementById('displayTodosButton');
+displayTodosButton.addEventListener('click',function(){
+  todoList.displayTodos();
+});
+
+//Requeriment 3
+var toggleAllButton = document.getElementById('toggleAllButton');
+toggleAllButton.addEventListener('click', () => {
+    todoList.toggleAll();
+})
