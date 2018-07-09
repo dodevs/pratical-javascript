@@ -64,6 +64,41 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 
 ### Version 9
 
-- [ ] There should be an li element for every todo.
-- [ ] Each li element should contain .todoText
-- [ ] Each li element should show .completed
+- [x] There should be an li element for every todo.
+- [x] Each li element should contain .todoText
+- [x] Each li element should show .completed
+
+### forEach examples:
+
+```javascript
+    //Função declarada - recebe os tres parametros do callback do forEach
+    function logName(elemento, index, array){
+        console.log(index, name, "of", array);
+    }
+    //Array de estudantes
+    var students = ["David", "João", "Carlos"];
+    //forEach 1 - É passado apenas o nome da função com parametro
+    students.forEach(logName);
+    //forEach 2 - É passada a assinatura completa da função como parametro
+    students.forEach(function logname(element, index, array){
+        console.log(index, element, "of", array);
+    });
+    //forEach 3 - É passado apenas a função sem seu nome como parametro
+    students.forEach(function(element, index, array){
+        console.log(index, element, "of", array);
+    });
+    // forEach 4 - É usado uma arrow function como parametro
+    students.forEach((x,i,a)=>{console.log(i,x,"of",a)})
+```
+
+### addEventListener examples:
+
+```javascript
+    function eventFunction(evento){
+        console.log("Evento ocorrido");
+        console.log(evento);
+    }
+    //Primeiro parametro é o evento, o segundo a funcao de callback
+    domElement.addEventListener('click', eventFunction);
+
+```
