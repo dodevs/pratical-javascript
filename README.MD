@@ -60,3 +60,10 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 - [x] it should have working controls for .changeTodo
 - [x] it should have working controls for .deleteTodo
 - [x] it should have working controls for .toggleCompleted
+
+
+### Version 9
+
+- [ ] There should be an li element for every todo.
+- [ ] Each li element should contain .todoText
+- [ ] Each li element should show .completed
