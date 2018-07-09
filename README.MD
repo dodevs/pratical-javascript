@@ -100,5 +100,14 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
     }
     //Primeiro parametro é o evento, o segundo a funcao de callback
     domElement.addEventListener('click', eventFunction);
-
 ```
+
+### Version 10
+
+ <blockquote> <p style="color: red;">Nao é viavel criar um eventListener para cada 'todo', pois isso não é bom para a memória. O correto é criar um unico eventListener </br>que funciona de forma genérica para todos elementos</p>  </blockquote>
+
+- [x] There should be a way to create delete buttons
+- [x] There should be a button for each todo
+- [x] Each li should have an id that has the todo position
+- [x] Delete buttons should have access to the todo id
+- [ ] Clicking delete should update todoList.todos and the DOM  

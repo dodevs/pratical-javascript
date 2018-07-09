@@ -87,6 +87,7 @@ var views = {
     todoUl.innerHTML = ''; // define o conteudo (childs) do html como vazio
     for (var i = 0; i < todoList.todos.length; i++){
       var todoLi = document.createElement('li'); //Cria um novo elemento em cada iteração
+      
       var todo = todoList.todos[i];
       
       var todoTextWithCompletion = '';
@@ -97,8 +98,28 @@ var views = {
         todoTextWithCompletion = "[ ] " + todo.todoText;
       }
       
+      todoLi.id = i //todoLi.setAttribute('id',i);
       todoLi.textContent = todoTextWithCompletion; //Adicona a propriedade .todoText no texto do elemento li
+      todoLi.appendChild(this.createDeleteButton());
       todoUl.appendChild(todoLi); //Adiciona o element li no elemento ul
     }
+  },
+  createDeleteButton: function(liID){
+    var deleteButton = document.createElement('button');
+    deleteButton.textContent = 'delete';
+    deleteButton.className = "deleteButton";
+
+    return deleteButton
   }
-}
+};
+
+var todoUl = document.querySelector('ul');
+todoUl.addEventListener('click', function(event){
+  
+  var element = event.target;
+  
+  if(element.className == "deleteButton"){
+    var parentElementId = element.parentNode.id;
+    console.log(event.target.parentNode.id);
+  }
+});
