@@ -116,3 +116,28 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 
 - [x] todoList.toggleAll should use forEach
 - [x] views.displayTodos should use forEach
+
+### Bind, Call, Apply
+
+#### Call example:
+
+```javascript
+var input0 = document.createElement('input');
+input0.type = "text";
+var input1 = document.createElement('input');
+input1.type = "number";
+var input2 = document.createElement('input');
+input2.type = "text";
+
+var inputs = [input0, input1, input2];
+
+function isTextInput(target){
+    return target.type === "text";
+}
+
+function filterDomElements(elements, filterCallback) {  
+    return Array.prototype.filter.call(elements, filterCallback);   
+}
+
+filterDomElements(inputs, isTextInput);
+```
