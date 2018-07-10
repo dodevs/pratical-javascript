@@ -30,35 +30,18 @@ var todoList = {
                 completedTodos++;
             }
         })
-        /*
-        // Conta quantos 'todos' estão completos
-        for(var i = 0; i < totalTodos; i++){
-            if(todos[i].completed == true){
-                completedTodos++;
-            }
-        }
-        */
-
 
         // Caso 1: se todos 'todos' estao 'true', os defina como 'false'
         if(completedTodos == totalTodos){
+            //forEach implementation
             todos.forEach(function(todo){
-                todo.completed = true;
+                todo.completed = false;
             })
-            /*
-            for(var i =0; i < totalTodos; i++){
-                todos[i].completed = false;
-            }
-            */
         } else{ //Outro caso
             todos.forEach(function(todo){
                 todo.completed = true;
             })
-            /*
-            for(var i = 0; i < totalTodos; i++){
-                todos[i].completed = true;
-            }
-            */
+
         }
     }
 };
@@ -105,13 +88,12 @@ var views = {
   displayTodos: function(){
     var todoUl = document.querySelector('ul'); //Faz um busca pelo elemento e armazena a primeira ocorrencia
     todoUl.innerHTML = ''; // define o conteudo (childs) do html como vazio
-    for (var i = 0; i < todoList.todos.length; i++){
+
+    //Deve ser passado o 'this' como segundo parametro para o forEach. Assim esse será o 'this' do callback
+    todoList.todos.forEach(function(todo, i){
       var todoLi = document.createElement('li'); //Cria um novo elemento em cada iteração
-      
-      var todo = todoList.todos[i];
-      
+      //var todo = todoList.todos[i];
       var todoTextWithCompletion = '';
-      
       if(todo.completed == true){
         todoTextWithCompletion = "[x] " + todo.todoText;
       }else{
@@ -122,9 +104,9 @@ var views = {
       todoLi.textContent = todoTextWithCompletion; //Adicona a propriedade .todoText no texto do elemento li
       todoLi.appendChild(this.createDeleteButton());
       todoUl.appendChild(todoLi); //Adiciona o element li no elemento ul
-    }
+    },this)
   },
-  createDeleteButton: function(liID){
+  createDeleteButton: function(){
     var deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';
     deleteButton.className = "deleteButton";

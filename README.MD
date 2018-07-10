@@ -114,5 +114,5 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 
 ### Version 11
 
-- [ ] todoList.toggleAll should use forEach
-- [ ] views.displayTodos should use forEach
+- [x] todoList.toggleAll should use forEach
+- [x] views.displayTodos should use forEach
