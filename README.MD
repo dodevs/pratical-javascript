@@ -110,4 +110,9 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 - [x] There should be a button for each todo
 - [x] Each li should have an id that has the todo position
 - [x] Delete buttons should have access to the todo id
-- [ ] Clicking delete should update todoList.todos and the DOM  
+- [x] Clicking delete should update todoList.todos and the DOM  
+
+### Version 11
+
+- [ ] todoList.toggleAll should use forEach
+- [ ] views.displayTodos should use forEach

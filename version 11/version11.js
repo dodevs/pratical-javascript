@@ -24,22 +24,41 @@ var todoList = {
         var totalTodos = todos.length;
         var completedTodos = 0;
 
+        //forEach implementation
+        todos.forEach(function(todo){
+            if(todo.completed == true){
+                completedTodos++;
+            }
+        })
+        /*
         // Conta quantos 'todos' estão completos
         for(var i = 0; i < totalTodos; i++){
             if(todos[i].completed == true){
                 completedTodos++;
             }
         }
+        */
+
 
         // Caso 1: se todos 'todos' estao 'true', os defina como 'false'
         if(completedTodos == totalTodos){
+            todos.forEach(function(todo){
+                todo.completed = true;
+            })
+            /*
             for(var i =0; i < totalTodos; i++){
                 todos[i].completed = false;
             }
+            */
         } else{ //Outro caso
+            todos.forEach(function(todo){
+                todo.completed = true;
+            })
+            /*
             for(var i = 0; i < totalTodos; i++){
                 todos[i].completed = true;
             }
+            */
         }
     }
 };
