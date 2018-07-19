@@ -118,8 +118,8 @@ var object2 = object1 //Fazem referencia ao mesmo endereço de memoria
 - [x] views.displayTodos should use forEach
 
 ### Bind, Call, Apply
-> Bind: retorna uma nova função com o valor do <em>this</em> e parametros alterados
-> Call: chama a função com o valor do <em>this</em> alterado e permite passar os parametros necessários
+> Bind: retorna uma nova função com o valor do <em>this</em> e parametros alterados <br>
+> Call: chama a função com o valor do <em>this</em> alterado e permite passar os parametros necessários <br>
 > Apply: chama a função com o valor do <em>this</em> alterado e permite passar os parametros como um Array
 
 #### Call example:
